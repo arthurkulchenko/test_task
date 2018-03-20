@@ -10,6 +10,7 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.7'
 gem 'rack-cors'
 gem 'devise'
+gem 'responders'
 
 gem 'active_model_serializers'
 gem 'oj'
