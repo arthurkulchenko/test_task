@@ -67,6 +67,8 @@ GEM
       sshkit (~> 1.2)
     case_transform (0.2)
       activesupport
+    childprocess (0.9.0)
+      ffi (~> 1.0, >= 1.0.11)
     concurrent-ruby (1.0.5)
     crass (1.0.3)
     devise (4.4.3)
@@ -85,6 +87,7 @@ GEM
     ffi (1.9.23)
     globalid (0.4.1)
       activesupport (>= 4.2.0)
+    headless (2.3.1)
     i18n (0.9.5)
       concurrent-ruby (~> 1.0)
     jsonapi-renderer (0.2.0)
@@ -164,6 +167,10 @@ GEM
       rspec-support (~> 3.7.0)
     rspec-support (3.7.1)
     ruby_dep (1.5.0)
+    rubyzip (1.2.1)
+    selenium-webdriver (3.11.0)
+      childprocess (~> 0.5)
+      rubyzip (~> 1.2)
     shoulda-matchers (3.1.2)
       activesupport (>= 4.0.0)
     spring (2.0.2)
@@ -204,6 +211,7 @@ DEPENDENCIES
   capistrano-rvm
   devise
   factory_bot_rails
+  headless
   listen (>= 3.0.5, < 3.2)
   oj
   oj_mimic_json
@@ -213,6 +221,7 @@ DEPENDENCIES
   rails (~> 5.1.5)
   responders
   rspec-rails
+  selenium-webdriver
   shoulda-matchers
   spring
   spring-watcher-listen (~> 2.0.0)

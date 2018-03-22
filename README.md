@@ -1,24 +1,11 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Задания
+Задание 1. Реализуйте автоматизированную проверку наличия новых личных сообщений на Вашем любимом форуме с помощью Selenium на ruby.
+Предполагаемый алгоритм решения задачи:
+Залогиниться на форум, используя предоставленные логин и пароль аккаунта.
+Перейти в раздел личных сообщений
+Попытаться найти элемент, содержащий число новых сообщений
+В случае его наличия - прочитать innerText / value.
+Задачу нужно реализовать на Ruby On Rails в виде API-вызова, где логин и пароль аккаунта являются GET-параметрами, а ответ - JSON-объект с единственным полем "unread_messages_count".
+Рекомендуется продумать архитектуру решения: желательно выделить "низкий уровень" элементарных запросов и "высокий уровень" управление навигацией и обработки ошибок навигации, обязательно использовать принцип "тонких контроллеров".

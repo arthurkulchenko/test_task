@@ -11,6 +11,8 @@ gem 'puma', '~> 3.7'
 gem 'rack-cors'
 gem 'devise'
 gem 'responders'
+gem 'headless'
+gem 'selenium-webdriver'
 
 gem 'active_model_serializers'
 gem 'oj'
